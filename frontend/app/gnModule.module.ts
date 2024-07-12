@@ -34,7 +34,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
-import { MonitoringSitesGroupsComponent } from './components/monitoring-sitesgroups/monitoring-sitesgroups.component';
+import { MonitoringGSitesDatatableComponent } from './components/monitoring-g-sites-datatable/monitoring-g-sites-datatable.component';
 import { DataTableService } from './services/data-table.service';
 import { MonitoringPropertiesGComponent } from './components/monitoring-properties-g/monitoring-properties-g.component';
 import { GeoJSONService } from './services/geojson.service';
@@ -72,7 +72,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: MonitoringSitesGroupsComponent,
+        component: MonitoringGSitesDatatableComponent,
         resolve: {
           data: SitesGroupsReslver,
         },
@@ -98,7 +98,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        component: MonitoringSitesGroupsComponent,
+        component: MonitoringGSitesDatatableComponent,
         resolve: {
           data: SitesGroupsReslver,
         },
@@ -162,7 +162,7 @@ const routes: Routes = [
     MonitoringPropertiesComponent,
     MonitoringDatatableComponent,
     MonitoringMapListComponent,
-    MonitoringSitesGroupsComponent,
+    MonitoringGSitesDatatableComponent,
     MonitoringSitesgroupsDetailComponent,
     MonitoringDatatableGComponent,
     MonitoringPropertiesGComponent,
