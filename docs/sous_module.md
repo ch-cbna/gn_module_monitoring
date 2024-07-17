@@ -124,7 +124,8 @@ Par exemple :
       "nb_observations"
     ]
 ```
-
+  L'attribut `keep` permet de spécifier les champs pour lequels on souhaite conserver les valeurs  si on choisi de faire un enchainement de saisie. 
+  
 ## Les schémas génériques
 
 Les schémas des variables génériques sont définis dans le repertoire
